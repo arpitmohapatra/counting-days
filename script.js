@@ -105,7 +105,7 @@ function Clock(countdown,callback) {
   setTimeout(updateClock,500);
 }
 
-var deadline = new Date(Date.parse(new Date()) + 12 * 24 * 60 * 60 * 1000);
+var deadline = new Date('2023-07-10');
 var c = new Clock(deadline, function(){ alert('countdown complete') });
 document.body.appendChild(c.el);
 

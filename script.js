@@ -1,6 +1,3 @@
-console.clear();
-
-
 function CountdownTracker(label, value){
 
   var el = document.createElement('span');
@@ -109,5 +106,5 @@ var deadline = new Date('2023-07-10');
 var c = new Clock(deadline, function(){ alert('countdown complete') });
 document.body.appendChild(c.el);
 
-var clock = new Clock();
-document.body.appendChild(clock.el);
+// var clock = new Clock();
+// document.body.appendChild(clock.el);

@@ -25,6 +25,7 @@ body {
 }
 .flip-clock__slot {
   font-size: 2vw;
+  color:#ccc;
 }
 .card {
   display: block;

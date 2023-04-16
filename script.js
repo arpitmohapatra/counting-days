@@ -1,3 +1,12 @@
+// Add PWA support
+window.onload = () => {
+  "use strict";
+
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("./sw.js");
+  }
+};
+
 function CountdownTracker(label, value){
 
   var el = document.createElement('span');

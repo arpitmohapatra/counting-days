@@ -7,7 +7,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #111;
+  background: #040016;
 }
 .flip-clock {
   text-align: center;
@@ -25,7 +25,7 @@ body {
 }
 .flip-clock__slot {
   font-size: 2vw;
-  color:#ccc;
+  color: #ccc;
 }
 .card {
   display: block;
@@ -50,7 +50,7 @@ body {
   transform: translateZ(0);
 }
 .card__bottom {
-  color: #FFF;
+  color: #fff;
   position: absolute;
   top: 50%;
   left: 0;
@@ -82,17 +82,17 @@ body {
 }
 .flip .card__back::before {
   -webkit-animation: flipTop 0.3s cubic-bezier(0.37, 0.01, 0.94, 0.35);
-          animation: flipTop 0.3s cubic-bezier(0.37, 0.01, 0.94, 0.35);
+  animation: flipTop 0.3s cubic-bezier(0.37, 0.01, 0.94, 0.35);
   -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  animation-fill-mode: both;
   transform-origin: center bottom;
 }
 .flip .card__back .card__bottom {
   transform-origin: center top;
   -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  animation-fill-mode: both;
   -webkit-animation: flipBottom 0.6s cubic-bezier(0.15, 0.45, 0.28, 1);
-          animation: flipBottom 0.6s cubic-bezier(0.15, 0.45, 0.28, 1);
+  animation: flipBottom 0.6s cubic-bezier(0.15, 0.45, 0.28, 1);
 }
 @-webkit-keyframes flipTop {
   0% {

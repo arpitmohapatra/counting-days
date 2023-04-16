@@ -3,12 +3,12 @@
   "short_name": "Counting Days",
   "icons": [
     {
-      "src": "./images/android-chrome-192x192.png",
+      "src": "/counting-days/images/android-chrome-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "./images/android-chrome-512x512.png",
+      "src": "/counting-days/images/android-chrome-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
@@ -17,6 +17,6 @@
   "id": "/counting-days/",
   "start_url": "/counting-days/",
   "display": "standalone",
-  "background_color": "white",
-  "theme_color": "white"
+  "background_color": "black",
+  "theme_color": "black"
 }

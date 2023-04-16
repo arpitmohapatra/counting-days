@@ -1,5 +1,10 @@
 var cacheName = "counting-days-pwa";
-var filesToCache = ["/", "./index.html", "./style.css", "./script.js"];
+var filesToCache = [
+  "/counting-days/",
+  "/counting-days/index.html",
+  "/counting-days/style.css",
+  "/counting-days/script.js",
+];
 
 /* Start the service worker and cache all of the app's content */
 self.addEventListener("install", function (e) {

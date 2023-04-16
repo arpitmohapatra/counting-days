@@ -14,7 +14,8 @@
     }
   ],
   "lang": "en-US",
-  "start_url": "./index.html",
+  "id": "/counting-days/",
+  "start_url": "/counting-days/",
   "display": "standalone",
   "background_color": "white",
   "theme_color": "white"

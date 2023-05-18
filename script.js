@@ -18,7 +18,26 @@ window.onload = () => {
     });
   });
   
+  var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+  
+  if (isIOS && window.navigator.standalone === false) {
+      // Show the install button
+      var installButton = document.getElementById('install-button');
+      installButton.style.display = 'block';
+  }
 };
+
+// Handle the install button click event
+function addToHomeScreen() {
+  if (isIOS && window.navigator.standalone === false) {
+    var userAgent = window.navigator.userAgent.toLowerCase();
+    if (userAgent.indexOf('safari') !== -1 && userAgent.indexOf('chrome') === -1) {
+      // Safari on iOS
+      var instructions = 'To add this web app to your home screen, tap the share button and select "Add to Home Screen".';
+      alert(instructions);
+    }
+  }
+}
 
 function CountdownTracker(label, value) {
   var el = document.createElement("span");

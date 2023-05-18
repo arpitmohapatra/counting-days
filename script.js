@@ -26,7 +26,7 @@ window.onload = () => {
       var installButton = document.getElementById('install-button');
       installButton.style.background = '#111';
       installButton.addEventListener('click', addToHomeScreen);
-    }
+    });
   }
 };
 

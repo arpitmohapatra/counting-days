@@ -22,12 +22,9 @@ window.onload = () => {
   
   if (isIOS && window.navigator.standalone === false) {
     // Show the install button
-    window.addEventListener('load', function() {
-      var installButton = document.getElementById('install-button');
-      installButton.style.display = 'block';
-      installButton.style.background = '#333';
-      installButton.addEventListener('click', addToHomeScreen);
-    });
+    var installButton = document.getElementById('install-button');
+    installButton.style.display = 'block';
+    installButton.addEventListener('click', addToHomeScreen);
   }
 };
 

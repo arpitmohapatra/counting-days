@@ -9,6 +9,21 @@ body {
   align-items: center;
   background: #040016;
 }
+#install-button {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  padding: 10px 20px;
+  background-color: #2196f3;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 .flip-clock {
   text-align: center;
   perspective: 400px;

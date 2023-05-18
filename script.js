@@ -24,7 +24,8 @@ window.onload = () => {
     // Show the install button
     window.addEventListener('load', function() {
       var installButton = document.getElementById('install-button');
-      installButton.style.background = '#111';
+      installButton.style.display = 'block';
+      installButton.style.background = '#333';
       installButton.addEventListener('click', addToHomeScreen);
     });
   }

@@ -18,8 +18,6 @@ window.onload = () => {
     });
   });
   
-  // Handle the install button click event
-  
   
   var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
   
@@ -27,14 +25,13 @@ window.onload = () => {
     // Show the install button
     var installButton = document.getElementById('install-button');
     installButton.style.display = 'block';
+    installButton.style.background = '#333';
     installButton.addEventListener('click', () => {
-      if (isIOS && window.navigator.standalone === false) {
-        var userAgent = window.navigator.userAgent.toLowerCase();
-        if (userAgent.indexOf('safari') !== -1 && userAgent.indexOf('chrome') === -1) {
-          // Safari on iOS
-          var instructions = 'To add this web app to your home screen, tap the share button and select "Add to Home Screen".';
-          alert(instructions);
-        }
+      var userAgent = window.navigator.userAgent.toLowerCase();
+      if (userAgent.indexOf('safari') !== -1 && userAgent.indexOf('chrome') === -1) {
+        // Safari on iOS
+        var instructions = 'To add this web app to your home screen, tap the share button and select "Add to Home Screen".';
+        alert(instructions);
       }
     });
   }

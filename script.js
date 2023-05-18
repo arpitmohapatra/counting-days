@@ -21,9 +21,10 @@ window.onload = () => {
   var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
   
   if (isIOS && window.navigator.standalone === false) {
-      // Show the install button
-      var installButton = document.getElementById('install-button');
-      installButton.style.display = 'block';
+    // Show the install button
+    var installButton = document.getElementById('install-button');
+    installButton.style.display = 'block';
+    installButton.onclick = addToHomeScreen;
   }
 };
 

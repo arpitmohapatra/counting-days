@@ -5,6 +5,19 @@ window.onload = () => {
   if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register("/counting-days/sw.js");
   }
+  
+  window.addEventListener('beforeinstallprompt', function(event) {
+    event.preventDefault(); // Prevent the default prompt
+    var installButton = document.getElementById('install-button');
+    installButton.style.display = 'block';
+
+    // Handle the install button click event
+    installButton.addEventListener('click', function() {
+      installButton.style.display = 'none';
+      event.prompt(); // Show the installation prompt
+    });
+  });
+  
 };
 
 function CountdownTracker(label, value) {
